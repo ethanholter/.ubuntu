@@ -1,0 +1,16 @@
+add_newline = false
+"$schema" = 'https://starship.rs/config-schema.json'
+
+[cmd_duration]
+min_time = 500
+format = '\[took [$duration](bold yellow)\]'
+
+[[battery.display]]
+threshold = 20
+style = 'bold red'
+
+[git_branch]
+symbol = ''
+
+[git_status]
+disabled = true
