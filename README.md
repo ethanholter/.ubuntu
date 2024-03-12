@@ -1,5 +1,11 @@
 # My Ubuntu Dotfiles
 
+```bash
+git clone https://github.com/ethanholter/.ubuntu ~/
+cd ~/.ubuntu
+stow */
+```
+
 <details>
 <summary>Install Neovim</summary>
 
