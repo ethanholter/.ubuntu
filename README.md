@@ -23,3 +23,11 @@ sudo mkdir -p -m 755 /etc/apt/keyrings && wget -qO- https://cli.github.com/packa
 && sudo apt install gh -y
 ```
 </details>
+
+<details>
+<summary>Install ROS2 Humble</summary>
+
+```bash
+TODO
+```
+</details>
