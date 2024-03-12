@@ -1,4 +1,4 @@
-# .ubuntu
+# My Ubuntu Dotfiles
 
 <details>
 <summary>Install Neovim</summary>
