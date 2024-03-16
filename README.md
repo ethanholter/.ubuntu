@@ -58,12 +58,8 @@ rosdep update
 <summary>Install OpenVPN</summary>
 
 ```bash
-sudo su
-```
-```bash
-apt update && apt -y install ca-certificates wget net-tools gnupg
-wget https://as-repository.openvpn.net/as-repo-public.asc -qO /etc/apt/trusted.gpg.d/as-repository.asc
-echo "deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/as-repository.asc] http://as-repository.openvpn.net/as/debian jammy main">/etc/apt/sources.list.d/openvpn-as-repo.list
-apt update && apt -y install openvpn-as && exit
+sudo mkdir -p /etc/apt/keyrings && curl -fsSL https://packages.openvpn.net/packages-repo.gpg | sudo tee /etc/apt/keyrings/openvpn.asc
+echo "deb [signed-by=/etc/apt/keyrings/openvpn.asc] https://packages.openvpn.net/openvpn3/debian $(lsb_release -c | awk '{print $2}') main" | sudo tee /etc/apt/sources.list.d/openvpn-packages.list
+sudo apt update -y && sudo apt install openvpn3 -y
 ```
 </details>
