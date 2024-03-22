@@ -1,5 +1,11 @@
 # My Ubuntu Dotfiles
 
+```bash
+git clone https://github.com/ethanholter/.ubuntu ~/
+cd ~/.ubuntu
+stow */
+```
+
 <details>
 <summary>Install Neovim</summary>
 
@@ -44,5 +50,14 @@ sudo apt update -y && sudo apt upgrade -y
 sudo apt install ros-humble-desktop python3-rosdep2 tmux python3-venv -y
 echo "source /opt/ros/humble/setup.bash" >> ${HOME}/.bashrc
 rosdep update
+```
+</details>
+
+
+<details>
+<summary>Install OpenVPN</summary>
+
+```bash
+sudo apt-get install network-manager-openvpn-gnome
 ```
 </details>
