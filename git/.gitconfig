@@ -8,3 +8,9 @@
 	ui = true
 [credential "https://class-git.engineering.uiowa.edu"]
 	provider = generic
+[credential "https://github.com"]
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = !/usr/bin/gh auth git-credential
+[pull]
+	rebase = false
