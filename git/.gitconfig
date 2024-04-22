@@ -4,6 +4,7 @@
 [core]
 	editor = nano
 	excludesFile = /home/ethan/.config/gitignore_global
+	autocrlf = input
 [color]
 	ui = true
 [credential "https://class-git.engineering.uiowa.edu"]
