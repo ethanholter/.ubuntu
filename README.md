@@ -76,3 +76,12 @@ cd ${HOME}/Code/Colloid-gtk-theme
 source ./install.sh -l -c dark -t all --tweaks rimless float
 ```
 </details>
+
+<details>
+<summary>Download API keys</summary>
+
+Private repository. Must sign in with gh cli first
+```bash
+git clone https://github.com/ethanholter/.api-keys ~/
+```
+</details>
