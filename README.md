@@ -85,3 +85,9 @@ Private repository. Must sign in with gh cli first
 git clone https://github.com/ethanholter/.api-keys ~/
 ```
 </details>
+
+<details>
+<summary>Download Node.js (with nvm)</summary>
+
+
+</details>
