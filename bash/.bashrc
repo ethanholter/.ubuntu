@@ -15,11 +15,10 @@ HISTCONTROL=ignoreboth
 HISTSIZE=1000
 HISTFILESIZE=2000
 
-
 # shell options
-shopt -s histappend # append to the history file, don't overwrite it
+shopt -s histappend   # append to the history file, don't overwrite it
 shopt -s checkwinsize # If this is not set, the terminal will not resize properly
-shopt -s globstar # use ** for recursive globbing
+shopt -s globstar     # use ** for recursive globbing
 
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
@@ -111,15 +110,24 @@ fi
 
 if ! [ -d "${HOME}/bin" ]; then
 	mkdir -p ${HOME}/bin/
-fi 
+fi
 PATH="${HOME}/bin:${PATH}"
 
+# PlatformIO
+if [ -d "${HOME}/.platformio/penv/bin" ]; then
+	PATH="${HOME}/.platformio/penv/bin:${PATH}"
+fi
+
 # Misc
+
 eval "$(zoxide init bash)"
 eval "$(starship init bash)"
 eval "$(thefuck --alias wtf)"
 
 # NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+if [ -d ~/.nvm ]; then
+	export NVM_DIR="$HOME/.nvm"
+	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+	[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+fi
