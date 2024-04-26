@@ -108,6 +108,10 @@ if [ -f "${HOME}/Code/Rover/install/setup.bash" ]; then
 	source "${HOME}/Code/Rover/install/setup.bash"
 fi
 
+if [ -f "${HOME}/Code/Base-Station/install/setup.bash" ]; then
+	source "${HOME}/Code/Base-Station/install/setup.bash"
+fi
+
 if ! [ -d "${HOME}/bin" ]; then
 	mkdir -p ${HOME}/bin/
 fi
@@ -119,8 +123,7 @@ if [ -d "${HOME}/.platformio/penv/bin" ]; then
 fi
 
 # Misc
-
-eval "$(zoxide init bash)"
+# eval "$(zoxide init bash)"
 eval "$(starship init bash)"
 eval "$(thefuck --alias wtf)"
 
