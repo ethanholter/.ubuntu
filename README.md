@@ -98,3 +98,12 @@ export NVM_DIR="$HOME/.nvm" && (
 nvm install node
 ```
 </details>
+
+<details>
+<summary>Download Flatpak</summary>
+
+```bash
+sudo apt install flatpak gnome-software-plugin-flatpak
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+```
+</details>
