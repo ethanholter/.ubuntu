@@ -107,3 +107,12 @@ sudo apt install flatpak gnome-software-plugin-flatpak
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 ```
 </details>
+
+<details>
+<summary>Misc Tweaks</summary>
+  
+```bash
+gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close" # Add minimize and maximize icons
+```
+
+</details>
