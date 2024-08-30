@@ -118,4 +118,9 @@ gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize
 sudo apt install hstr zoxide fzf ripgrep tmux
 ```
 
+rust:
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
 </details>
