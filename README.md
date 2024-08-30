@@ -115,7 +115,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close" # Add minimize and maximize icons
 ```
 ```bash
-sudo apt install hstr zoxide fzf ripgrep tmux
+sudo apt install hstr zoxide fzf ripgrep tmux build-essentials
 ```
 
 rust:
