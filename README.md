@@ -123,6 +123,16 @@ rust:
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
+better power save:
+```sudo su```
+then
+```
+apt update
+apt install sysfsutils
+echo "power/mem_sleep = deep" > /etc/sysfs.d/99-deep-sleep.conf 
+```
+
+
 </details>
 
 Docker:
